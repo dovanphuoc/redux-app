@@ -10,7 +10,9 @@ const AddNewPost = () => {
 	console.log(addNewPost);
 	return (
 		<>
-			<button onClick={handleAddPost}>Add new post</button>
+			<button style={{ marginBottom: "20px" }} onClick={handleAddPost}>
+				Add new post
+			</button>
 		</>
 	);
 };

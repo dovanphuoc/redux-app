@@ -1,11 +1,11 @@
-import { addNewPost } from "../constants/getPost";
+import { addNewPost } from "../constants/addNewPost";
 
 const initialState = {
 	addNewPost: "add-new-post",
 };
 export const addPostReducer = (state = initialState, { type, payload }) => {
 	switch (type) {
-		case addNewPost.ADD_NEW_POST: {
+		case addNewPost: {
 			return {
 				...state,
 				post: payload,
